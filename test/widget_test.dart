@@ -15,9 +15,7 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     expect(find.widgetWithText(AppBar, 'Count'), findsOneWidget);
-    expect(
-        find.widgetWithText(
-            Text, 'You have pushed the button this many times:'),
+    expect(find.text('You have pushed the button this many times:'),
         findsOneWidget);
 
     // Verify that our counter starts at 0.
