@@ -26,7 +26,6 @@ workflows:
       - activate-ssh-key@4: {}
       - git-clone@6: {}
       - certificate-and-profile-installer@1: {}
-      # Flutter latest version
       - flutter-installer@0: {}
       - cache-pull@2: {}
       - flutter-analyze@0:

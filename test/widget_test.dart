@@ -9,14 +9,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:testing_bitrise/app.dart';
 
-import 'package:testing_bitrise/main.dart';
-
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
     expect(find.widgetWithText(AppBar, 'Count'), findsOneWidget);
+    expect(find.text('You have pushed the button this many times:'),
+        findsOneWidget);
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
