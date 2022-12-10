@@ -32,7 +32,9 @@ void main() {
     await tester.tap(addIcon);
     await tester.pump();
 
+    expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsNothing);
     expect(find.text('2'), findsOneWidget);
+    expect(find.text('3'), findsNothing);
   });
 }
