@@ -7,6 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:testing_bitrise/app.dart';
 
 import 'package:testing_bitrise/main.dart';
 
